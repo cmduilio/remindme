@@ -6,29 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".fragments.SearchFragment">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/reminder_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Aqui va un carousel con los top search o similar"
-            android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Aqui va un carousel con los top search o similar"
+                android:layout_gravity="center_horizontal"/>
 
-        <Button
-            android:id="@+id/advanced_search_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Advanced Search"
-            android:background="@drawable/rounded_button"
-            android:textAllCaps="false"
-            android:layout_gravity="center_horizontal"/>
+            <Button
+                android:id="@+id/advanced_search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Advanced Search"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"/>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/prueba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Prueba"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="restart"
+                android:background="@drawable/rounded_button"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

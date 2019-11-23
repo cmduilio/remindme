@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextPairRow">
+        <attr name="showData" format="boolean" />
+        <attr name="showLabel" format="boolean" />
+    </declare-styleable>
+</resources>

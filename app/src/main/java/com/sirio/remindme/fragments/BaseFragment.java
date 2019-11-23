@@ -17,7 +17,7 @@ public class BaseFragment extends Fragment {
                 R.animator.enter_from_left,
                 R.animator.exit_to_right);
 
-        fragmentTransaction.addToBackStack("xyz");
+        fragmentTransaction.addToBackStack(null);
         fragmentTransaction.hide(this);
         fragmentTransaction.add(R.id.fragment, fragmentTo);
         fragmentTransaction.commit();

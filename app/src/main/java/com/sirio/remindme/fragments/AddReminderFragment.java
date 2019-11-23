@@ -21,7 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class Add2x1Fragment extends BaseFragment {
+public class AddReminderFragment extends BaseFragment {
     String[] movies = {"Locademia de policia", "Locos del aire 2", "La pistola desnuda", "Rocky"};
     TextView dateText;
     TextView timeText;
@@ -34,7 +34,7 @@ public class Add2x1Fragment extends BaseFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_add2x1, container, false);
+        final View view = inflater.inflate(R.layout.fragment_add_reminder, container, false);
 
         Spinner dropdown = view.findViewById(R.id.movies);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, this.movies);
