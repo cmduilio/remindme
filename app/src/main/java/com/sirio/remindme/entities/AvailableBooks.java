@@ -5,7 +5,7 @@ import java.util.List;
 public class AvailableBooks {
 
     private String success;
-    private List<Book> payload;
+    private List<Reminder> payload;
 
     public String getSuccess() {
         return success;
@@ -15,11 +15,11 @@ public class AvailableBooks {
         this.success = success;
     }
 
-    public List<Book> getPayload() {
+    public List<Reminder> getPayload() {
         return payload;
     }
 
-    public void setPayload(List<Book> payload) {
+    public void setPayload(List<Reminder> payload) {
         this.payload = payload;
     }
 
