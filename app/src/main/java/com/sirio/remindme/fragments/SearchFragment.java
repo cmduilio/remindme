@@ -18,8 +18,8 @@ import com.sirio.remindme.adapters.ReminderItemDecorator;
 import com.sirio.remindme.entities.AvailableBooks;
 import com.sirio.remindme.entities.Reminder;
 import com.sirio.remindme.events.OnReminderClick;
-import com.sirio.remindme.services.GetAvailableBooks;
-import com.sirio.remindme.services.ServerCallback;
+import com.sirio.remindme.repositories.GetAvailableBooks;
+import com.sirio.remindme.repositories.ServerCallback;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -45,7 +45,8 @@ public class SearchFragment extends BaseFragment implements OnReminderClick {
         this.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("ASDDDDDDD");
+
+                changeFragmentWithAnimation(new ReminderCreateUpdateFragment(null));
             }
         });
 
@@ -119,6 +120,6 @@ public class SearchFragment extends BaseFragment implements OnReminderClick {
 
     @Override
     public void onReminderClick(Reminder reminder) {
-        changeFragmentWithAnimation(new ReminderDetailFragment(reminder));
+        changeFragmentWithAnimation(new ReminderCreateUpdateFragment(reminder));
     }
 }

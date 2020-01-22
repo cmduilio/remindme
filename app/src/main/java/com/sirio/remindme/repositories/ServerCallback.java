@@ -1,4 +1,4 @@
-package com.sirio.remindme.services;
+package com.sirio.remindme.repositories;
 
 import com.android.volley.VolleyError;
 
